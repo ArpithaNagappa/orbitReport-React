@@ -22,6 +22,20 @@ button {
   justify-content: center;
 }
 
+header{
+  background: #5c94ce;
+  color: white;
+  width: 100%;
+  display: inline-flex;
+  text-align: center;
+  padding: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  border: 2px solid #354a5f;
+  text-align:end;
+}
 table {
   border: 2px solid #354a5f;
   font-family: Montserrat, Arial, Helvetica, sans-serif;

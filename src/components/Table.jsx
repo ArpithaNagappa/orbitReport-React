@@ -1,18 +1,31 @@
+import './styling.css';
 const Table = ({ sat }) => {
+  let tabBody=sat.map((data, id) => {
+    const status = data.operational ? "Active" : "Inactive";
   return (
-    <table>
-    <thead>
-     <tr>
-       <th>Header TBD</th>
-     </tr>
-     </thead>
      <tbody>
-     <tr>
-       <td>Row Data TBD</td>
+     <tr key={id}>
+       <td>{data.name}</td>
+       <td>{data.type}</td>
+       <td>{data.launchDate}</td>
+       <td>{status}</td>
      </tr>
      </tbody>
-   </table>
+   
   );
+})
+let tab = <table>
+            <thead>
+              <tr >
+                <th> Name </th>
+                <th> Type of Satellite </th>
+                <th> Launch Date </th>
+                <th> Status </th>
+              </tr>
+            </thead>
+          {tabBody}
+          </table>
+return tab
 };
 
 export default Table;
